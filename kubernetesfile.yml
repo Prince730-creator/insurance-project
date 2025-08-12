@@ -16,7 +16,7 @@ spec:
       containers:
         - name: healthcare
           image: ash998/healthcare:latest
-          imagePullpolicy: Always
+          imagePullPolicy: Always
           ports:
             - containerPort: 8082
           env:
