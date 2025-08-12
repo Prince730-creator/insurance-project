@@ -14,7 +14,7 @@ spec:
         app: healthcare
     spec:
       containers:
-        - name: insurance
+        - name: healthcare
           image: ash998/insurance-project:latest
           ports:
             - containerPort: 8082
@@ -31,5 +31,6 @@ spec:
   ports:
     - port: 8082
       targetPort: 8082
+      nodePort: 32148
   selector:
     app: healthcare
